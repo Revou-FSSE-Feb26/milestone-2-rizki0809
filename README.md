@@ -15,4 +15,4 @@ RevoFun adalh website yang berisi game-game sederhana. Game yang ada dibuat meng
 - CSS 
 - Javascript
 - Github
-- URL : 
+- URL : https://revou-fsse-feb26.github.io/milestone-2-rizki0809/
