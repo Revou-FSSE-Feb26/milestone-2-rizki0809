@@ -19,6 +19,7 @@ function startGame() {
   game.score = 0;
   game.time = 10;
 
+  startBtn.disabled = true;
   clickBtn.disabled = false;
   restartBtn.classList.add("hidden");
 
@@ -42,6 +43,7 @@ function addScore() {
 
 function endGame() {
   game.active = false;
+  startBtn.disabled = false;
   clickBtn.disabled = true;
   restartBtn.classList.remove("hidden");
 

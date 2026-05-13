@@ -19,6 +19,9 @@ function checkGuess() {
   if (!value) {
     message.textContent = "Enter a number!";
     return;
+  } else if (value < 1 || value > 100) {
+    message.textContent = "Enter a number between 1-100";
+    return;
   }
 
   game.attempts--;
