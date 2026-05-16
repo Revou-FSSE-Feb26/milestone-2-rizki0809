@@ -14,6 +14,7 @@ startBtn.addEventListener("click", startGame);
 clickBtn.addEventListener("click", addScore);
 restartBtn.addEventListener("click", resetGame);
 
+// mulai game
 function startGame() {
   game.active = true;
   game.score = 0;
@@ -34,6 +35,7 @@ function startGame() {
   }, 1000);
 }
 
+// skoring
 function addScore() {
   if (game.active) {
     game.score++;
@@ -41,6 +43,7 @@ function addScore() {
   }
 }
 
+// skor akhir
 function endGame() {
   game.active = false;
   startBtn.disabled = false;
@@ -50,6 +53,7 @@ function endGame() {
   timeText.innerHTML = `<span class="lose">Game Over! Final Score: ${game.score}</span>`;
 }
 
+// reset game
 function resetGame() {
   scoreText.textContent = "";
   timeText.textContent = "";

@@ -2,45 +2,89 @@
 <html>
 <head>
   <title>RevoFun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
 
+<body>
+ 
   <header>
-    <h1>🎮 RevoFun</h1>
+    <div class="logo">🎮 RevoFun</div>
     <nav>
-      <a href="pages/guess.html">Guess</a>
-      <a href="pages/rps.html">RPS</a>
-      <a href="pages/clicker.html">Clicker</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <div class="container">
-    <div class="card">
-      <h2>Welcome</h2>
-      <p>Play fun mini games and challenge yourself!</p>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>LEVEL UP YOUR FUN</h1>
+      <p>
+        Welcome to RevoFun — your pixel-powered gaming universe.
+      </p>
+      <a href="#games" class="cta-btn">START PLAYING</a>
     </div>
-  </div>
+  </section>
 
-  <section id="games">
-    <h2>Games</h2>
-    <div class="games-grid">
-      <div class="cards">
-        <h3>Rock, Paper, Scissor</h3>
-        <p>Play a classic rock, paper, scissors against computer</p>
+  <section class="games-section" id="games">
+    <h2 class="section-title">GAME MENU</h2>
+
+    <div class="game-grid">
+      <div class="game-card">
+        <div class="pixel-box game1"></div>
+        <h3>Guess</h3>
+        <p>
+          Guess the number between 1-100 only in 5 attempt to win
+        </p>
+        <a href="pages/guess.html" class="play-btn">PLAY NOW</a>
       </div>
 
-      <div class="cards">
-        <h3>Guess the number</h3>
-        <p>Guess the number between 1-100 only in 5 attempt to win</p>
+      <div class="game-card">
+        <div class="pixel-box game2"></div>
+        <h3>RPS</h3>
+        <p>
+          Play a classic rock, paper, scissors against computer
+        </p>
+        <a href="pages/rps.html" class="play-btn">PLAY NOW</a>
       </div>
 
-      <div class="cards">
+      <div class="game-card">
+        <div class="pixel-box game3"></div>
         <h3>Clicker</h3>
-        <p>Challange your self to click as fast as you can to break  your  mouse.</p>
+        <p>
+          Challange your self to click as fast as you can to break  your  mouse.
+        </p>
+        <a href="pages/clicker.html" class="play-btn">PLAY NOW</a>
       </div>
     </div>
   </section>
+
+  <section class="feedback" id="feedback">
+    <div class="container">
+      <h2 class="section-title">PLAYER FEEDBACK</h2>
+
+      <div class="feedback-box">
+        <form>
+          <input type="text" placeholder="YOUR NAME" required>
+          <input type="email" placeholder="YOUR EMAIL" required>
+          <textarea rows="6" placeholder="YOUR MESSAGE"></textarea>
+          <button type="submit">SEND FEEDBACK</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>© 2026 RevoFun. All Rights Reserved.</p>
+    <p>Made with Pixels & Fun 🎮</p>
+  </footer>
 
 </body>
 </html>

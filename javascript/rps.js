@@ -14,6 +14,7 @@ buttons.forEach(btn => {
   btn.addEventListener("click", () => play(btn.dataset.choice));
 });
 
+// reset score
 restartBtn.addEventListener("click", () => {
   score.player = 0;
   score.computer = 0;
@@ -21,6 +22,7 @@ restartBtn.addEventListener("click", () => {
   result.textContent = "";
 });
 
+// comp choice dan scoring
 function play(player) {
   const computer = choices[Math.floor(Math.random() * 3)];
 
@@ -45,6 +47,7 @@ function play(player) {
   updateScore();
 }
 
+// update score
 function updateScore() {
   scoreText.textContent = `Player: ${score.player} | Computer: ${score.computer}`;
 }

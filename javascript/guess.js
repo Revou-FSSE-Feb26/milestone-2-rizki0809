@@ -13,6 +13,7 @@ let game = {
 guessBtn.addEventListener("click", checkGuess);
 restartBtn.addEventListener("click", restartGame);
 
+// cek tebakan
 function checkGuess() {
   let value = Number(input.value);
 
@@ -41,6 +42,7 @@ function checkGuess() {
   }
 }
 
+// end game
 function endGame(win) {
   guessBtn.disabled = true;
   restartBtn.classList.remove("hidden");
@@ -50,6 +52,7 @@ function endGame(win) {
     : `<span class="lose">You Lose! Number was ${game.number}</span>`;
 }
 
+// restart game
 function restartGame() {
   game = {
     number: Math.floor(Math.random() * 100) + 1,
